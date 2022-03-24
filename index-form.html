@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Lato:wght@300&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/form-style.css">
+    <title>Form multistep wizard</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            
+            <aside class="host--acommodation">
+                <a href="#"><span class="logo">BS</span></a>
+                <h2>¿Qué tipo de alojamiento vas a compartir?</h2>
+            </aside>
+         <form  action="">
+            <fieldset>
+                <!-- First step del form -->
+            <div id="step1" class="acommodation-step">
+             <div class="acommodation">
+                <label for="hostHouse" class="host-home"></label>
+                <button id="hostHouse" type="submit" class="btn host-home">
+                    <img class="hosting-image" src="https://images.pexels.com/photos/4061977/pexels-photo-4061977.jpeg?cs=srgb&dl=pexels-erik-mclean-4061977.jpg&fm=jpg" alt="home front view and car"/><span>Casa</span>
+                </button>
+            </div>
+           
+             <div class="acommodation">
+                <button id="hostApartment" type="submit" class="btn host-apartment">
+                    <label for="hostApartment" class="host-aparment"></label>
+                    <img  class="hosting-image" src="https://images.pexels.com/photos/259239/pexels-photo-259239.jpeg?cs=srgb&dl=pexels-pixabay-259239.jpg&fm=jpg"/><span>Apartamento</span>
+                </button>
+            </div>
+
+                <div class="acommodation">
+                    <button id="hostEstate" type="submit" class="btn host-estate">
+                        <label for="hostEstate" class="host-estate"></label>
+                        <img class="hosting-image"  src="https://images.pexels.com/photos/979190/pexels-photo-979190.jpeg?cs=srgb&dl=pexels-connie-mulloy-979190.jpg&fm=jpg" alt="Countryside home with snow"/><span>Finca</span>
+                    </button>
+                </div>
+        
+               
+                <div class="acommodation">
+                    <button id="hostHotel" type="submit" class="btn host-hotel">
+                        <label for="hostHotel" class="host-hotel"></label>
+                        <img class="hosting-image"  src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?cs=srgb&dl=pexels-donald-tong-189296.jpg&fm=jpg" alt="Hotel Chairs by pool"/><span>Hotel</span>
+                    </button>
+                </div>
+            
+                <div class="control-container">
+                    <button id="back-btn" class="back-button step-btn">Atrás</button>
+                    <button id="next-btn" class="next-button step-btn">Siguiente</button>
+                </div>
+            </div>
+
+            <!-- STEP 2 => Guests information -->
+
+            <div id="guestStep2" class="guest-step hidden">
+                <div class="form-guests">
+                    <label for="guests" class="guest-number"></label>
+                    <button id="guests" type="submit" class="btn form-guests">
+                        <img class="guests-img" src="https://images.pexels.com/photos/2586339/pexels-photo-2586339.jpeg?cs=srgb&dl=pexels-dominique-roellinger-2586339.jpg&fm=jpg" alt="1 guest"><span>1</span>
+                    </button>
+                </div>
+ 
+                <div class="form-guests">
+                     <label for="guests" class="guest-number"></label>
+                     <button id="guests" type="submit" class="btn form-guests">
+                         <img class="guests-img" src="https://images.pexels.com/photos/5225274/pexels-photo-5225274.jpeg?cs=srgb&dl=pexels-samson-katt-5225274.jpg&fm=jpg" alt="2 guests"><span>2</span>
+                     </button>
+                 </div>
+ 
+                 <div class="form-guests">
+                     <label for="guests" class="guest-number"></label>
+                     <button id="guests" type="submit" class="btn form-guests">
+                         <img class="guests-img" src="https://images.pexels.com/photos/4911252/pexels-photo-4911252.jpeg?cs=srgb&dl=pexels-rodnae-productions-4911252.jpg&fm=jpg" alt="3 guests"><span>3</span>
+                     </button>
+                 </div>
+ 
+                 <div class="form-guests">
+                     <label for="guests" class="guest-number"></label>
+                     <button id="guests" type="submit" class="btn form-guests">
+                         <img class="guests-img" src="https://images.pexels.com/photos/4034047/pexels-photo-4034047.jpeg?cs=srgb&dl=pexels-helena-lopes-4034047.jpg&fm=jpg" alt="4 guests"><span>4</span>
+                     </button>
+                 </div>
+ 
+                 <div class="control-container">
+                     <button id="back-btn" class="back-button step-btn ">Atrás</button>
+                     <button id="next-btn" class="next-button step-btn">Siguiente</button>
+                 </div>
+            </div>
+
+            <!-- STEP 3 Services -->
+
+            <div id="serviceStep3" class="services-step hidden">
+                
+                <div class="form-services">
+                    <label for="services" class="host--services"></label>
+                    <button id="services" type="submit" class="btn btn-services">
+                        <img class="services-img" src="https://images.pexels.com/photos/3098683/pexels-photo-3098683.jpeg?cs=srgb&dl=pexels-drew-williams-3098683.jpg&fm=jpg" alt="service"><span>Wifi</span>
+                    </button>
+                </div>
+
+                <div class="form-services">
+                    <label for="services" class="host-services"></label>
+                    <button id="services" type="submit" class="btn btn-services">
+                        <img class="services-img" src="https://images.pexels.com/photos/4155491/pexels-photo-4155491.jpeg?cs=srgb&dl=pexels-cottonbro-4155491.jpg&fm=jpg" alt="service"><span>Agua Caliente</span>
+                    </button>
+                </div>
+                <div class="form-services">
+                    <label for="services" class="host-services"></label>
+                    <button id="services" type="submit" class="btn btn-services">
+                        <img class="services-img" src="https://images.pexels.com/photos/5556176/pexels-photo-5556176.jpeg?cs=srgb&dl=pexels-hakim-santoso-5556176.jpg&fm=jpg" alt="service"><span>Cocina</span>
+                    </button>
+                </div>
+                <div class="form-services">
+                    <label for="services" class="host-services"></label>
+                    <button id="services" type="submit" class="btn btn-services">
+                        <img class="services-img" src="https://images.pexels.com/photos/7886856/pexels-photo-7886856.jpeg?cs=srgb&dl=pexels-mikhail-nilov-7886856.jpg&fm=jpg" alt="television"><span>Television</span>
+                    </button>
+                </div>
+            
+                <div class="control-container">
+                    <button id="back-btn" class="back-button step-btn ">Atrás</button>
+                    <button id="next-btn" class="next-button step-btn">Finalizar</button>
+                </div>
+
+
+            </div>
+
+
+
+            </fieldset>
+        </form>
+     </section>
+    </main>
+
+    <script>
+        const btns = document.querySelectorAll('.step-btn') //
+       
+        const guestInfo = document.getElementById('guestStep2') // show step
+        const serviceInfo = document.getElementById('serviceStep3')
+
+        const nextBtn = document.getElementById('next-button')
+        // const nextButton = document.getElementByID('') // 
+        
+        const buttons = {
+            nextButton: document.getElementById('next-button'),
+            backButton: document.getElementById('back-button'),
+        }
+
+        const buttonsArr = Object.keys(buttons)
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const buttonShow = buttonsArr.findIndex(e => e === btn.getAttribute('id'))
+                const hiddenStep = buttonsArr.slice(buttonShow + next-button, back-button  )
+                hiddenSteps.map(hiddenStep => {
+                    buttons[hiddenForm].classList.remove('visible')
+                    buttons[hiddenForm].classList.add('hidden')
+                })
+                if(btn.getAttribute('id') !== 'back-button') {
+                 guestInfo.classList.remove('hidden')
+                 guestInfo.classList.remove('visible')    
+            }
+    
+            })
+        })
+
+        nextBtn.addEventListener('click', () => {
+            
+        })
+
+
+    </script>
+</body>
+</html>
